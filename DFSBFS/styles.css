@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Container {
+  display: flex;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.leftBox {
+  height: 100vh;
+  width: 20vw;
+}
+.drawingArea {
+  position: relative;
+}
+
+.lowerLayer {
+  position: absolute;
+  z-index: 1;
+}
+
+.upperLayer {
+  position: absolute;
+  z-index: 2;
+}
+
+.circle {
+  /* user-select was creating problems with the mouse down event therefore added these four properties */
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid black;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: flex;
+}

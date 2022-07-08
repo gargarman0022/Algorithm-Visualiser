@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>K-Means</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" style="padding-left: 10vw" href="/index.html"
+        ><h3>AlgoViz</h3>
+      </a>
+    </nav>
+    <div class="Container">
+      <div
+        class="
+          leftBox
+          bg-secondary
+          d-flex
+          align-items-center
+          justify-content-center
+        "
+      >
+        <div style="width: 80%">
+          <form>
+            <div style="margin: 1rem">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="No of Clusters"
+                id="noOfClusters"
+                name="noOfClusters"
+              />
+            </div>
+            <div style="margin: 1rem">
+              <button
+                class="btn btn-light btn-block"
+                id="submitBtn"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+          <div style="margin: 1rem">
+            <button class="start btn btn-light btn-block">Start</button>
+          </div>
+          <div style="margin: 1rem">
+            <button class="clear btn btn-light btn-block">Clear</button>
+          </div>
+        </div>
+      </div>
+      <div class="drawingArea"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="./app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
